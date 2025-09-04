@@ -1,0 +1,12 @@
+{% extends "Home.html" %}
+{% block content %}
+  <h2>Sua pergunta:</h2>
+  <p><strong>{{ pergunta }}</strong></p>
+
+  <h2>Resposta:</h2>
+  <div class="resposta">
+    {{ resposta | safe }}
+  </div>
+
+  <a href="{{ url_for('index') }}">Fazer outra pergunta</a>
+{% endblock %}
